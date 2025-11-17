@@ -1,0 +1,4 @@
+flask>=2.2
+google-genai>=0.10.0
+google-adk>=0.1.0
+gunicorn>=20.1
