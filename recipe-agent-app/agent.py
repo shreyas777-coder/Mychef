@@ -1,6 +1,8 @@
 import os
-#from google.adk.agents import Agent
-#from google.adk.models.gemini import Gemini
+from google.adk.agents import Agent # Only this ADK import is needed
+
+# 1. Configure the LLM
+MODEL_NAME = "gemini-2.5-flash"
 
 # 1. Configure the LLM
 # The ADK will automatically look for the GEMINI_API_KEY environment variable.
