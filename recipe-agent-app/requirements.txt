@@ -1,4 +1,6 @@
 google-adk
+# Explicitly including the ADK package for Google models/toolkits
+google-genai-toolkit
 uvicorn
 fastapi
 pydantic
