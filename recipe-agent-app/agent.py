@@ -1,5 +1,5 @@
 import os
-from google.adk.agents import Agent
+#from google.adk.agents import Agent
 #from google.adk.models.gemini import Gemini
 
 # 1. Configure the LLM
@@ -8,7 +8,7 @@ MODEL_NAME = "gemini-2.5-flash"  # A fast, capable model for this task
 
 # 2. Define the Agent
 RecipeAgent = Agent(
-    model=Gemini(model_name=MODEL_NAME),
+    model=MODEL_NAME,
     name="RecipeAssistant",
     description="An AI agent that generates detailed recipes from ingredients or dish names.",
     instruction=(
