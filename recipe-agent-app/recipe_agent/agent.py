@@ -1,6 +1,13 @@
 import os
+from pathlib import Path
+
+from dotenv import load_dotenv
 from google.adk.agents import Agent
-from google.adk.models.gemini import Gemini
+from google.adk.models.lite_llm import LiteLlm
+import google.auth
+
+# 1. Configure the LLM
+MODEL_NAME = "gemini-2.5-flash"
 
 # 1. Configure the LLM
 # The ADK will automatically look for the GEMINI_API_KEY environment variable.
@@ -8,7 +15,7 @@ MODEL_NAME = "gemini-2.5-flash"  # A fast, capable model for this task
 
 # 2. Define the Agent
 RecipeAgent = Agent(
-    model=Gemini(model_name=MODEL_NAME),
+    model=MODEL_NAME,
     name="RecipeAssistant",
     description="An AI agent that generates detailed recipes from ingredients or dish names.",
     instruction=(
