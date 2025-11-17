@@ -1,3 +1,2 @@
-google-adk
-uvicorn[standard]
-fastapi
+flask
+google-genai
